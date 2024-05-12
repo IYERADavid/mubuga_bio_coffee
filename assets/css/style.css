@@ -483,6 +483,9 @@ body.nav-active { overflow: hidden; }
   outline: none;
   transition: border-color var(--transition-2);
 }
+.input-field .email {
+  width: 100%;
+}
 
 .input-field::placeholder { color: inherit; }
 
@@ -957,15 +960,15 @@ body.nav-active { overflow: hidden; }
 
 .about .container {
   display: grid;
-  gap: 120px;
+  gap: 20px;
 }
 
 .about-banner {
   position: relative;
-  margin-block-end: 120px;
+  margin-block-end: 30px;
 }
 
-.about-banner > .w-100 { padding-inline-start: 50px; }
+.about-banner > .w-100 { padding-inline-start: 50px; height: 70vh; border-radius: 10px; }
 
 .about .abs-img { position: absolute; }
 
@@ -994,13 +997,6 @@ body.nav-active { overflow: hidden; }
   background-repeat: repeat;
 }
 
-.about .abs-img-2::before {
-  inset: 0;
-  background-image: url('../images/badge-2-bg.png');
-  background-repeat: no-repeat;
-  background-size: contain;
-  animation: rotate360 15s linear infinite;
-}
 
 
 
@@ -1032,10 +1028,13 @@ body.nav-active { overflow: hidden; }
   color: var(--davys-grey);
 }
 
-.special-dish-content .span { color: var(--gold-crayola); }
-
-.special-dish .btn { margin-inline: auto; }
-
+.special-dish .video_div {
+  width: 100%;
+}
+.special-dish .video {
+  width: 100%;
+  height: 50vh;
+}
 
 
 
@@ -1257,7 +1256,7 @@ textarea.input-field {
 
 .event .section-title { margin-block-end: 40px; }
 
-.event .gallery { width: 100%; height: 100vh;}
+.event .gallery { width: 100%; height: 85vh;}
 
 .event .btn {
   margin-inline: auto;
@@ -1763,7 +1762,7 @@ textarea.input-field {
 
   .about .container {
     grid-template-columns: 0.7fr 1fr;
-    gap: 30px;
+    gap: 10px;
   }
 
 
@@ -1784,8 +1783,6 @@ textarea.input-field {
 
   .special-dish .section-subtitle::after,
   .special-dish .btn { margin-inline: 0; }
-
-  .special-dish-content .wrapper { justify-content: flex-start; }
 
   .special-dish .abs-img {
     position: absolute;
@@ -1991,12 +1988,12 @@ textarea.input-field {
    */
 
   .special-dish-content {
-    padding: 225px 120px;
+    padding: 10px auto 10px auto;
     padding-inline-end: 0;
   }
 
   .special-dish-content .container {
-    max-width: 460px;
+    max-width: 90%;
     margin-inline: 0;
   }
 
